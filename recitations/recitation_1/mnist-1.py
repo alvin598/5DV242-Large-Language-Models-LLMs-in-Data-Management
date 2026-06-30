@@ -60,15 +60,26 @@ class NeuralNet(nn.Module):
         out = self.l2(out)
         # no activation and no softmax at the end!
         return out
+    
+
+class Perceptron(nn.Module):
+    def __init__(self, input_size, num_classes):
+        nn.Module.__init__(self)
+        self.l1 = nn.Linear(input_size, num_classes)
+
+    def forward(self, x):
+        out = self.l1(x)
+        return out
 
 # Hyper-parameters
 input_size = 784 # 28x28
-hidden_size = 500
+hidden_size = 700
 num_classes = 10
 num_epochs = 2
 learning_rate = 0.001
 
-model = NeuralNet(input_size, hidden_size, num_classes).to(device)
+# model = NeuralNet(input_size, hidden_size, num_classes).to(device)
+model = Perceptron(input_size, num_classes).to(device)
 
 # Loss and optimizer
 criterion = nn.CrossEntropyLoss()
