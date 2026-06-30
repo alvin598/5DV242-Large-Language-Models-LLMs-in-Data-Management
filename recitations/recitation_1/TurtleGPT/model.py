@@ -27,6 +27,9 @@ class TurtleGPT(nn.Module):
         self.c_window_size = c_window_size
 
         # ModuleDict registers all these submodules
+        # layer_norm_module = nn.LayerNorm(d_model)
+        layer_norm_module = nn.Identity()
+
         self.transformer = nn.ModuleDict({
             "input_embedding" :nn.Embedding(vocab_size, d_model),
             "positional_encoding" :nn.Embedding(c_window_size, d_model),
@@ -34,7 +37,7 @@ class TurtleGPT(nn.Module):
             "layers": nn.ModuleList(
                 [TransformerBlock(c_window_size, d_model=d_model, n_head=n_head)
                  for _ in range(n_layer)]),
-            "layer_norm": nn.LayerNorm(d_model)}
+            "layer_norm": layer_norm_module}
         )
         self.transformer.to(self.device)
 
@@ -144,9 +147,11 @@ class TransformerBlock(nn.Module):
 
     def __init__(self, c_window_size=None, d_model=None, n_head=None):
         super().__init__()
-        self.layer_norm_1 = nn.LayerNorm(d_model)
+        # self.layer_norm_1 = nn.LayerNorm(d_model)
+        self.layer_norm_1 = nn.Identity()
         self.attn = CausalSelfAttention(c_window_size, d_model=d_model, n_head=n_head)
-        self.layer_norm_2 = nn.LayerNorm(d_model)
+        # self.layer_norm_2 = nn.LayerNorm(d_model)
+        self.layer_norm_2 = nn.Identity()
         self.ff = nn.ModuleDict({
             "c_fc": nn.Linear(d_model, 4 * d_model),
             "c_proj": nn.Linear(4 * d_model, d_model),
@@ -163,7 +168,8 @@ class TransformerBlock(nn.Module):
 
 class NewGELU(nn.Module):
     def forward(self, x):
-        return torch.nn.GELU(approximate='tanh')(x)
+        # return torch.nn.GELU(approximate='tanh')(x)
+        return torch.sigmoid(x)
         #return 0.5 * x * (1.0 + torch.tanh(math.sqrt(2.0 / math.pi) * (x + 0.044715 * torch.pow(x, 3.0))))
 
 class CausalSelfAttention(nn.Module):
