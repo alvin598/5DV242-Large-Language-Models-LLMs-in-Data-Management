@@ -19,12 +19,13 @@ WEIGHT_DECAY = 0.1
 
 class TurtleGPT(nn.Module):
 
-    def __init__(self, c_window_size=None, d_model = None, n_head = None, n_layer=None, vocab_size=None):
+    def __init__(self, c_window_size=None, d_model = None, n_head = None, n_layer=None, vocab_size=None, use_residual=True):
         super().__init__()
         assert d_model % n_head == 0
 
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.c_window_size = c_window_size
+        self.use_residual = use_residual
 
         # ModuleDict registers all these submodules
         # layer_norm_module = nn.LayerNorm(d_model)
@@ -35,7 +36,7 @@ class TurtleGPT(nn.Module):
             "positional_encoding" :nn.Embedding(c_window_size, d_model),
             "dropout" :nn.Dropout(EMBD_PDROP),
             "layers": nn.ModuleList(
-                [TransformerBlock(c_window_size, d_model=d_model, n_head=n_head)
+                [TransformerBlock(c_window_size, d_model=d_model, n_head=n_head, use_residual=use_residual)
                  for _ in range(n_layer)]),
             "layer_norm": layer_norm_module}
         )
@@ -145,8 +146,9 @@ class TurtleGPT(nn.Module):
 
 class TransformerBlock(nn.Module):
 
-    def __init__(self, c_window_size=None, d_model=None, n_head=None):
+    def __init__(self, c_window_size=None, d_model=None, n_head=None, use_residual=True):
         super().__init__()
+        self.use_residual = use_residual
         # self.layer_norm_1 = nn.LayerNorm(d_model)
         self.layer_norm_1 = nn.Identity()
         self.attn = CausalSelfAttention(c_window_size, d_model=d_model, n_head=n_head)
@@ -162,8 +164,12 @@ class TransformerBlock(nn.Module):
         self.feedforward = lambda x: m.dropout(m.c_proj(m.Gelu(m.c_fc(x))))
 
     def forward(self, x):
-        x = x + self.attn(self.layer_norm_1(x))  # note residual connection
-        x = x + self.feedforward(self.layer_norm_2(x)) # another residual
+        if self.use_residual:
+            x = x + self.attn(self.layer_norm_1(x))
+            x = x + self.feedforward(self.layer_norm_2(x))
+        else:
+            x = self.attn(self.layer_norm_1(x))
+            x = self.feedforward(self.layer_norm_2(x))
         return x
 
 class NewGELU(nn.Module):

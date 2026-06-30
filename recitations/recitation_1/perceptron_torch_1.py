@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+from matplotlib import pyplot as plt
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -8,6 +9,12 @@ inputs = torch.tensor([[0,0,0],[0,0,1],[0,1,0],[0,1,1],[1,0,0],[1,0,1],[1,1,0],[
 majority = torch.tensor([0,0,0,1,0,1,1,1],dtype=torch.float32)
 xor = torch.tensor([0,1,1,0,1,0,0,0],dtype=torch.float32)
 onehotnot = torch.tensor([1,1,1,1,0,0,0,0],dtype=torch.float32)
+
+label_names = {
+    "majority": majority,
+    "xor": xor,
+    "onehotnot": onehotnot
+}
 
 class Perceptron(nn.Module):
     def __init__(self, input_size, activation_function):
@@ -21,9 +28,9 @@ class Perceptron(nn.Module):
         return out
 
 
-activation_function = nn.ReLU()
+# activation_function = nn.ReLU()
 #activation_function = nn.Sigmoid()
-#activation_function = nn.Tanh()
+activation_function = nn.Tanh()
 
 model = Perceptron(input_size=3, activation_function=activation_function).to(device)
 criterion = nn.MSELoss()
@@ -31,29 +38,53 @@ num_epochs = 100
 learning_rate = 0.01
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
-def non_batched_learning(labels):
+# init weights and bias
+# [-1,1]
+# nn.init.uniform_(model.l1.weight, a=-1.0, b=1.0)
+# nn.init.uniform_(model.l1.bias, a=-1.0, b=1.0)
+
+# [0,1]
+nn.init.uniform_(model.l1.weight, a=0.0, b=1.0)
+nn.init.uniform_(model.l1.bias, a=0.0, b=1.0)
+
+# [0]
+# nn.init.uniform_(model.l1.weight)
+# nn.init.uniform_(model.l1.bias)
+
+def non_batched_learning(model, labels):
+    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+    w1 = []
+    w2 = []
+    w3 = []
+    b = []
     for epoch in range(num_epochs):
-        i = 0
-        for input in inputs:
-            output = model(input).to(device)
-            label = torch.tensor([labels[i]]).to(device)
-            i+=1
-            loss = criterion(output,label)
+        for i, sample in enumerate(inputs):
+            output = model(sample).to(device)
+            label = torch.tensor([labels[i]], dtype=torch.float32, device=device)
+            loss = criterion(output, label)
+            optimizer.zero_grad()
             loss.backward()
             optimizer.step()
-            optimizer.zero_grad()
-            # print(f'Epoch [{epoch + 1}/{num_epochs}], Step [{i}], Loss: {loss.item():.4f}')
 
-            # print the weights and bias after every step
             with torch.no_grad():
                 weights = model.l1.weight[0].cpu().tolist()
                 bias = model.l1.bias[0].item()
-                print(
-                    f"Epoch [{epoch + 1}/{num_epochs}], Step [{i}] "
-                    f"loss: {loss.item():.4f}, "
-                    f"weights: [{weights[0]:.4f}, {weights[1]:.4f}, {weights[2]:.4f}], "
-                    f"bias: {bias:.4f}"
-                )
+                w1.append(weights[0])
+                w2.append(weights[1])
+                w3.append(weights[2])
+                b.append(bias)
+                # print(
+                #     f"Epoch [{epoch + 1}/{num_epochs}], Step [{i + 1}] "
+                #     f"loss: {loss.item():.4f}, "
+                #     f"weights: [{weights[0]:.4f}, {weights[1]:.4f}, {weights[2]:.4f}], "
+                #     f"bias: {bias:.4f}"
+                # )
+
+    with torch.no_grad():
+        weights = model.l1.weight[0].cpu().tolist()
+        bias = model.l1.bias[0].item()
+
+    return w1, w2, w3, b
 
 def batched_learning(labels):
 
@@ -70,6 +101,36 @@ def batched_learning(labels):
         optimizer.zero_grad()
         print(f'Epoch [{epoch + 1}/{num_epochs}]], Loss: {loss.item():.4f}')
 
+
+def non_batched_learning_evaluate():
+    for name, label in zip(label_names.keys(), [majority, onehotnot]):
+        for activation in [nn.Sigmoid(), nn.Tanh()]:
+            for init_weights in [[-1, 1], [0, 1], [0]]:
+                model = Perceptron(input_size=3, activation_function=activation).to(device)
+
+                if init_weights == [-1, 1]:
+                    nn.init.uniform_(model.l1.weight, a=-1.0, b=1.0)
+                    nn.init.uniform_(model.l1.bias, a=-1.0, b=1.0)
+                elif init_weights == [0, 1]:
+                    nn.init.uniform_(model.l1.weight, a=0.0, b=1.0)
+                    nn.init.uniform_(model.l1.bias, a=0.0, b=1.0)
+                elif init_weights == [0]:
+                    nn.init.uniform_(model.l1.weight)
+                    nn.init.uniform_(model.l1.bias)
+
+                w1, w2, w3, b = non_batched_learning(model, labels=label)
+
+                plt.figure()
+                plt.title(f"Label: {name}, Activation Function: {activation}, Initial Weights: {init_weights}")
+                plt.plot(w1, marker="o", label="weights")
+                plt.plot(w2, marker="o", label="weights")
+                plt.plot(w3, marker="o", label="weights")
+                plt.plot(b, color="red", linestyle="--", label="bias")
+                plt.legend()
+                plt.show()
+
+    
+
 def normalize_weights(weights):
     norm = torch.norm(weights)
     return weights/norm
@@ -81,7 +142,7 @@ def show():
             print(f"{input}->{output}")
 
 
-non_batched_learning(onehotnot)
+# non_batched_learning(onehotnot)
 #batched_learning(onehotnot)
 
 # evaluate the weigts and bias
@@ -97,4 +158,6 @@ with torch.no_grad():
         print(f"weight: {round(weight,4)}")
     print(f"bias: {round(bias,4)}")
 
-show()
+# show()
+
+# non_batched_learning_evaluate()

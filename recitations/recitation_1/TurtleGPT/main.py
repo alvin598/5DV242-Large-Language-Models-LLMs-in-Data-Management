@@ -14,7 +14,7 @@ def resolve_path(path):
         path_obj = BASE_DIR / path_obj
     return path_obj
 
-usage = ['inference','pretraining','SFT'][0]
+usage = ['inference','pretraining','SFT'][2]
 print(f"USAGE:{usage}")
 
 set_ups = {
@@ -25,7 +25,7 @@ set_ups = {
     'nano-turtle': {'c_window_size':32,'n_layer':1, 'n_head':1, 'd_model':4, 'batch_size':64}
 }
 
-turtle_type = 'nano-turtle'
+turtle_type = 'big-turtle'
 LEARNING_RATE = 0.0005
 
 vocab_size = 100
@@ -37,7 +37,8 @@ model = TurtleGPT(vocab_size=train_dataset.get_vocab_size(),
                   n_layer=set_ups[turtle_type]['n_layer'],
                   d_model=set_ups[turtle_type]['d_model'],
                   n_head=set_ups[turtle_type]['n_head'],
-                  c_window_size=set_ups[turtle_type]['c_window_size'])
+                  c_window_size=set_ups[turtle_type]['c_window_size'],
+                  use_residual=False)
 
 
 if __name__ == '__main__':
