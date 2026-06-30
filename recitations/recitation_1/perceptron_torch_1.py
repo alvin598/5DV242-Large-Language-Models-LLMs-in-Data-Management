@@ -21,9 +21,9 @@ class Perceptron(nn.Module):
         return out
 
 
-#activation_function = nn.ReLU()
+activation_function = nn.ReLU()
 #activation_function = nn.Sigmoid()
-activation_function = nn.Tanh()
+#activation_function = nn.Tanh()
 
 model = Perceptron(input_size=3, activation_function=activation_function).to(device)
 criterion = nn.MSELoss()
@@ -42,7 +42,18 @@ def non_batched_learning(labels):
             loss.backward()
             optimizer.step()
             optimizer.zero_grad()
-            print(f'Epoch [{epoch + 1}/{num_epochs}], Step [{i}], Loss: {loss.item():.4f}')
+            # print(f'Epoch [{epoch + 1}/{num_epochs}], Step [{i}], Loss: {loss.item():.4f}')
+
+            # print the weights and bias after every step
+            with torch.no_grad():
+                weights = model.l1.weight[0].cpu().tolist()
+                bias = model.l1.bias[0].item()
+                print(
+                    f"Epoch [{epoch + 1}/{num_epochs}], Step [{i}] "
+                    f"loss: {loss.item():.4f}, "
+                    f"weights: [{weights[0]:.4f}, {weights[1]:.4f}, {weights[2]:.4f}], "
+                    f"bias: {bias:.4f}"
+                )
 
 def batched_learning(labels):
 
@@ -59,13 +70,31 @@ def batched_learning(labels):
         optimizer.zero_grad()
         print(f'Epoch [{epoch + 1}/{num_epochs}]], Loss: {loss.item():.4f}')
 
+def normalize_weights(weights):
+    norm = torch.norm(weights)
+    return weights/norm
+
 def show():
     with torch.no_grad():
         for input in inputs:
             output = model(input)
             print(f"{input}->{output}")
 
-non_batched_learning(majority)
-#batched_learning(majority)
+
+non_batched_learning(onehotnot)
+#batched_learning(onehotnot)
+
+# evaluate the weigts and bias
+# do not adjust the gradients
+with torch.no_grad():
+    # retreve from layer 1
+    weights = model.l1.weight[0].cpu().tolist()
+    bias = model.l1.bias[0].item()
+
+
+    weights = normalize_weights(torch.tensor(weights)).tolist()
+    for weight in weights:
+        print(f"weight: {round(weight,4)}")
+    print(f"bias: {round(bias,4)}")
 
 show()
