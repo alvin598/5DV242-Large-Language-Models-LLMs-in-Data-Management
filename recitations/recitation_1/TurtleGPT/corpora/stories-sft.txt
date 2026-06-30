@@ -1,0 +1,999 @@
+who does a young rabbit bites # a rabbit $ 
+who does the dog bites # a poor cat $ 
+who does a rabbit admires # a poor cat $ 
+who does the young frog knows # a frog $ 
+who does a young dog knows # the cat $ 
+who does a cat knows # a clean cat $ 
+who does the frog bites # a rich dog $ 
+who does the rabbit knows # the cat $ 
+who does a rich frog bites # a old dog $ 
+who does a rabbit bites # the poor frog $ 
+who does the frog admires # the rich dog $ 
+who does the dog hates # a rabbit $ 
+who does the poor rabbit hits # the dog $ 
+who does a old rabbit bites # a frog $ 
+who does the dog hits # a poor dog $ 
+who does a dog bites # a poor dog $ 
+who does a clean rabbit hits # a dog $ 
+who does the old frog knows # the old frog $ 
+who does a young frog hits # a dirty rabbit $ 
+who does the rich dog loves # the dirty rabbit $ 
+who does the dog bites # the cat $ 
+who does the rich rabbit bites # the rabbit $ 
+who does the old cat knows # a dirty rabbit $ 
+who does a rabbit hits # a cat $ 
+who does the frog bites # a frog $ 
+who does a old dog hates # the rabbit $ 
+who does the young rabbit loves # the old cat $ 
+who does the rich dog admires # the young cat $ 
+who does the poor rabbit hates # the cat $ 
+who does a poor cat loves # a rabbit $ 
+who does a rich rabbit admires # a clean rabbit $ 
+who does the dog hates # a cat $ 
+who does the cat hits # a rabbit $ 
+who does a dirty dog bites # the rich frog $ 
+who does the poor frog hates # a dog $ 
+who does a frog hates # a cat $ 
+who does the rabbit loves # a dog $ 
+who does the rich frog knows # the young rabbit $ 
+who does the poor dog loves # the rabbit $ 
+who does the cat bites # the poor rabbit $ 
+who does the young frog bites # a cat $ 
+who does the frog hates # the cat $ 
+who does the rabbit hits # the young rabbit $ 
+who does the rabbit hits # a frog $ 
+who does the rabbit hits # a cat $ 
+who does a clean frog hates # a cat $ 
+who does a clean rabbit hits # a dog $ 
+who does a old cat loves # the clean dog $ 
+who does a dirty frog admires # a young rabbit $ 
+who does the rabbit hits # a dog $ 
+who does the dirty frog loves # a old dog $ 
+who does the cat admires # a clean dog $ 
+who does a cat hates # the old frog $ 
+who does the rabbit admires # a young frog $ 
+who does a frog knows # the dog $ 
+who does the frog hits # the cat $ 
+who does a dirty cat admires # the poor cat $ 
+who does a clean dog admires # a old cat $ 
+who does the dog hits # the clean dog $ 
+who does a clean cat loves # a rich rabbit $ 
+who does a rich dog admires # a clean rabbit $ 
+who does a frog knows # the young cat $ 
+who does a frog admires # the cat $ 
+who does the rich dog knows # a frog $ 
+who does a rich frog hates # a dirty frog $ 
+who does the cat loves # the dog $ 
+who does a dirty cat knows # the rabbit $ 
+who does the cat hits # a poor cat $ 
+who does the dog admires # a young rabbit $ 
+who does a dirty dog loves # the poor rabbit $ 
+who does a old rabbit admires # a rabbit $ 
+who does the frog hates # a cat $ 
+who does the poor cat hits # the rabbit $ 
+who does the young cat bites # the young dog $ 
+who does a young rabbit knows # the dog $ 
+who does the rabbit knows # a rabbit $ 
+who does a dirty frog hits # the frog $ 
+who does the dog loves # the rich cat $ 
+who does a poor rabbit admires # the old dog $ 
+who does the clean frog hates # the clean frog $ 
+who does the dog bites # a clean dog $ 
+who does the frog hates # the old dog $ 
+who does a rabbit bites # a cat $ 
+who does the rabbit loves # the rabbit $ 
+who does the dog loves # a rich cat $ 
+who does a dog knows # the frog $ 
+who does a cat loves # the frog $ 
+who does the dirty dog hits # a young cat $ 
+who does the dirty dog bites # a cat $ 
+who does the poor rabbit bites # the rabbit $ 
+who does the old dog loves # a poor dog $ 
+who does a cat loves # the cat $ 
+who does the cat admires # the poor rabbit $ 
+who does a old rabbit knows # the rabbit $ 
+who does a dog knows # a frog $ 
+who does a dog knows # the old frog $ 
+who does a dirty rabbit hits # the rabbit $ 
+who does a dirty frog admires # the frog $ 
+who does a dog hates # a cat $ 
+who does the cat bites # a dirty frog $ 
+who does a clean cat admires # the rabbit $ 
+who does a dog knows # the dog $ 
+who does the frog knows # a frog $ 
+who does the frog hits # a dirty frog $ 
+who does the dog knows # the rich rabbit $ 
+who does the frog knows # the rabbit $ 
+who does the poor frog admires # the dirty cat $ 
+who does a dirty rabbit admires # a rabbit $ 
+who does the poor rabbit knows # a dog $ 
+who does the frog bites # a frog $ 
+who does a rich frog loves # a young frog $ 
+who does the young dog loves # the poor frog $ 
+who does a cat knows # the dog $ 
+who does a old cat hates # a frog $ 
+who does a dirty dog hates # a young frog $ 
+who does a cat hates # a dirty frog $ 
+who does a frog admires # a rabbit $ 
+who does the rich dog knows # a dog $ 
+who does a rabbit loves # a rabbit $ 
+who does the young frog bites # the dog $ 
+who does the dog admires # a cat $ 
+who does a old rabbit knows # a rabbit $ 
+who does a cat admires # a clean rabbit $ 
+who does a dog hits # the dog $ 
+who does the poor dog loves # the cat $ 
+who does a dog loves # the rabbit $ 
+who does a young frog hates # the young dog $ 
+who does a cat hits # a dog $ 
+who does the cat hits # a clean frog $ 
+who does a cat bites # the dirty dog $ 
+who does the rabbit knows # the rabbit $ 
+who does the clean cat bites # a dog $ 
+who does the rabbit hates # a old frog $ 
+who does a frog hates # the dirty cat $ 
+who does the rabbit hits # a cat $ 
+who does a rich dog hits # the dirty cat $ 
+who does a clean dog loves # the old rabbit $ 
+who does a rabbit bites # a rabbit $ 
+who does the old frog loves # the rabbit $ 
+who does the clean cat knows # a young cat $ 
+who does a rabbit bites # the dirty cat $ 
+who does the rabbit hits # the rabbit $ 
+who does the cat knows # a cat $ 
+who does a dog loves # the frog $ 
+who does the rabbit hates # a dirty dog $ 
+who does the cat hates # a old rabbit $ 
+who does the clean rabbit bites # the clean rabbit $ 
+who does a cat loves # the dog $ 
+who does the frog hits # a poor cat $ 
+who does a clean dog hits # a dog $ 
+who does the clean frog hits # a clean frog $ 
+who does the old frog bites # a clean rabbit $ 
+who does a frog knows # the frog $ 
+who does a frog hates # a dog $ 
+who does a frog bites # a clean rabbit $ 
+who does a frog admires # the rich frog $ 
+who does the poor rabbit admires # a cat $ 
+who does the rabbit hits # a frog $ 
+who does a rabbit hates # a poor rabbit $ 
+who does a dog admires # the rabbit $ 
+who does a rich frog admires # the poor rabbit $ 
+who does the old rabbit hates # a rich dog $ 
+who does a poor frog bites # the old rabbit $ 
+who does the clean dog admires # the old rabbit $ 
+who does a poor cat bites # the old frog $ 
+who does a rabbit hits # the dog $ 
+who does the rich rabbit hates # the young rabbit $ 
+who does the cat knows # the rabbit $ 
+who does the cat admires # the rich rabbit $ 
+who does the rich rabbit hates # a frog $ 
+who does the frog loves # a clean cat $ 
+who does the rich dog loves # a dog $ 
+who does a young rabbit hits # the young rabbit $ 
+who does a cat hits # the dirty dog $ 
+who does the old cat bites # a young dog $ 
+who does the dog knows # a frog $ 
+who does the rabbit hits # a old cat $ 
+who does the rabbit knows # a cat $ 
+who does a dog knows # a old frog $ 
+who does a rabbit hits # the poor rabbit $ 
+who does a old dog hits # a rabbit $ 
+who does a dog bites # the poor cat $ 
+who does the rich rabbit hits # a rabbit $ 
+who does a poor frog hits # the poor cat $ 
+who does a frog loves # the dog $ 
+who does a frog knows # a dirty cat $ 
+who does a young frog bites # a clean dog $ 
+who does a young rabbit admires # a young cat $ 
+who does a poor frog knows # the rabbit $ 
+who does a dirty cat hits # the rabbit $ 
+who does the old cat knows # a dog $ 
+who does a young dog hates # a dog $ 
+who does the young frog hits # the cat $ 
+who does the frog hits # the clean rabbit $ 
+who does a dog bites # the dog $ 
+who does a rabbit knows # a dog $ 
+who does a rabbit hates # the dog $ 
+who does a dog knows # a old dog $ 
+who does a poor rabbit loves # the dog $ 
+who does a young cat bites # the dirty rabbit $ 
+who does a cat loves # the frog $ 
+who does a frog bites # the dog $ 
+who does the dog bites # a dirty frog $ 
+who does a poor rabbit hits # the poor dog $ 
+who does a rich cat hates # the old cat $ 
+who does a frog hits # the rich frog $ 
+who does a old frog bites # the dirty dog $ 
+who does a dog bites # a frog $ 
+who does the rich dog hits # a rabbit $ 
+who does a clean rabbit bites # a young cat $ 
+who does a dog hits # a rich dog $ 
+who does the frog bites # a clean frog $ 
+who does the poor frog hits # the rabbit $ 
+who does the rabbit bites # a rich dog $ 
+who does the frog bites # the rabbit $ 
+who does a rabbit hits # the clean frog $ 
+who does the young cat bites # a young dog $ 
+who does a rabbit hits # a cat $ 
+who does the frog loves # the cat $ 
+who does a rabbit loves # a dog $ 
+who does the dog knows # the frog $ 
+who does a dirty frog loves # a young dog $ 
+who does a rabbit bites # the dog $ 
+who does the frog admires # a rich rabbit $ 
+who does the old rabbit admires # a rich cat $ 
+who does a old rabbit admires # the young rabbit $ 
+who does a cat knows # a cat $ 
+who does the poor frog hates # a poor frog $ 
+who does the rabbit hates # a frog $ 
+who does the frog knows # the rabbit $ 
+who does a dog knows # the old rabbit $ 
+who does a rich dog bites # the dirty rabbit $ 
+who does the dirty dog hates # the rich dog $ 
+who does a old cat bites # a cat $ 
+who does a dog admires # a cat $ 
+who does the old dog loves # a poor rabbit $ 
+who does the old dog knows # a rich rabbit $ 
+who does the poor dog bites # the cat $ 
+who does the poor cat admires # the frog $ 
+who does the old rabbit admires # a poor frog $ 
+who does a rich dog loves # a poor frog $ 
+who does the rich dog admires # a young frog $ 
+who does the frog admires # the frog $ 
+who does a dirty cat admires # a rabbit $ 
+who does a dog bites # the dog $ 
+who does a rich frog admires # a young frog $ 
+who does the poor frog bites # a clean dog $ 
+who does the rich dog loves # the young frog $ 
+who does the poor cat bites # the cat $ 
+who does the dog knows # a dog $ 
+who does the frog loves # the cat $ 
+who does the poor frog loves # a clean dog $ 
+who does a rich frog admires # the clean rabbit $ 
+who does the clean rabbit bites # the rich dog $ 
+who does a frog bites # a dog $ 
+who does the frog hits # a rich dog $ 
+who does a poor rabbit hits # a dirty cat $ 
+who does a clean cat admires # a dog $ 
+who does the cat bites # a rich frog $ 
+who does a old dog admires # a cat $ 
+who does the dog knows # the cat $ 
+who does a frog admires # a cat $ 
+who does the dog bites # the rabbit $ 
+who does the dog admires # the clean dog $ 
+who does a dog hates # a young frog $ 
+who does the rabbit bites # the cat $ 
+who does a rich frog admires # the poor cat $ 
+who does the clean rabbit admires # the clean frog $ 
+who does a dog hits # a frog $ 
+who does a dog hits # the rabbit $ 
+who does a dirty rabbit bites # the dog $ 
+who does a rabbit knows # a young dog $ 
+who does the cat hates # a old cat $ 
+who does the clean cat admires # the frog $ 
+who does the poor cat loves # the poor dog $ 
+who does a poor dog bites # the dirty rabbit $ 
+who does a young cat hits # the poor cat $ 
+who does the dirty frog bites # a rich rabbit $ 
+who does a rich frog bites # a dirty dog $ 
+who does the poor dog admires # a poor rabbit $ 
+who does a clean cat knows # a cat $ 
+who does the dirty cat loves # the old cat $ 
+who does the poor frog admires # the rabbit $ 
+who does a rabbit loves # the rabbit $ 
+who does the frog hates # a rabbit $ 
+who does a clean cat hits # the clean rabbit $ 
+who does the dog knows # the frog $ 
+who does the dirty cat knows # the dog $ 
+who does the old frog bites # the young rabbit $ 
+who does a frog admires # the frog $ 
+who does a frog loves # the old dog $ 
+who does a poor dog bites # a old rabbit $ 
+who does the cat loves # the rich frog $ 
+who does the dog hits # the rich frog $ 
+who does the dirty dog knows # the cat $ 
+who does a frog admires # the old cat $ 
+who does a old frog hates # the rich rabbit $ 
+who does a rich dog knows # a old rabbit $ 
+who does a poor dog hits # the dirty frog $ 
+who does the old frog hates # the rich rabbit $ 
+who does a rich cat hits # a rabbit $ 
+who does a cat loves # a cat $ 
+who does the rich dog hates # a old frog $ 
+who does the cat bites # a old rabbit $ 
+who does a cat knows # a young dog $ 
+who does a dog loves # a cat $ 
+who does the dog admires # a cat $ 
+who does a rabbit knows # a rich rabbit $ 
+who does a rich cat bites # a cat $ 
+who does the frog hits # a poor dog $ 
+who does the poor frog hits # the old dog $ 
+who does a poor cat loves # the dog $ 
+who does a frog hates # a poor frog $ 
+who does the rich frog loves # a rich cat $ 
+who does a rich cat knows # the rabbit $ 
+who does a cat hits # a clean dog $ 
+who does a poor frog knows # a rich frog $ 
+who does the dog hits # the frog $ 
+who does the dog hates # a clean dog $ 
+who does the dirty dog bites # a rabbit $ 
+who does a poor dog loves # a rabbit $ 
+who does a cat hates # a rabbit $ 
+who does a poor cat hits # the rabbit $ 
+who does a rabbit bites # the dog $ 
+who does the old frog knows # a dog $ 
+who does the cat bites # a old cat $ 
+who does the rabbit admires # the young frog $ 
+who does a dog hits # the old frog $ 
+who does a dirty rabbit hates # a dirty cat $ 
+who does a cat bites # the cat $ 
+who does a frog loves # a dirty dog $ 
+who does the frog admires # a cat $ 
+who does the cat hits # a dog $ 
+who does a poor cat bites # a old rabbit $ 
+who does the rich rabbit loves # a young frog $ 
+who does the clean cat bites # a frog $ 
+who does a old frog knows # a dog $ 
+who does a rabbit bites # a young rabbit $ 
+who does a young cat hits # the rabbit $ 
+who does the cat admires # a poor dog $ 
+who does the poor rabbit loves # the rabbit $ 
+who does the dirty frog loves # a old frog $ 
+who does a rabbit hates # a frog $ 
+who does the poor cat bites # the young dog $ 
+who does the frog bites # a cat $ 
+who does a old cat bites # the dog $ 
+who does the dirty frog knows # the rabbit $ 
+who does a cat admires # the rabbit $ 
+who does the old frog knows # the old cat $ 
+who does a rabbit bites # the young dog $ 
+who does a rabbit loves # the dog $ 
+who does the cat knows # the dog $ 
+who does the dog hates # a rabbit $ 
+who does a poor frog admires # the young cat $ 
+who does the rabbit knows # a cat $ 
+who does the frog loves # the rich rabbit $ 
+who does a rabbit loves # a dirty rabbit $ 
+who does a young rabbit hits # a dirty cat $ 
+who does the frog hits # the young dog $ 
+who does a rich frog hits # the rabbit $ 
+who does the frog hates # the poor dog $ 
+who does a dog hates # a dirty cat $ 
+who does the poor rabbit knows # the dirty cat $ 
+who does the frog hits # a dog $ 
+who does the dirty rabbit hates # a dog $ 
+who does a dirty frog admires # the old dog $ 
+who does a dog admires # a clean rabbit $ 
+who does a clean frog hates # the rabbit $ 
+who does the poor frog hits # a dog $ 
+who does a poor rabbit hits # a old rabbit $ 
+who does a dog loves # a young dog $ 
+who does a poor rabbit hates # the rich rabbit $ 
+who does the dog admires # a young cat $ 
+who does the young cat hates # a poor cat $ 
+who does the dog bites # a cat $ 
+who does a cat loves # the old cat $ 
+who does the clean cat hates # a dog $ 
+who does the rich frog admires # the cat $ 
+who does the rabbit bites # the frog $ 
+who does a old cat bites # a old frog $ 
+who does the cat admires # a rabbit $ 
+who does a rabbit knows # the old frog $ 
+who does the cat loves # a dirty cat $ 
+who does a rabbit loves # a rich rabbit $ 
+who does a cat loves # the young cat $ 
+who does the frog knows # the frog $ 
+who does a dirty rabbit bites # the rabbit $ 
+who does a dirty frog hits # a dirty frog $ 
+who does a dirty rabbit loves # a young cat $ 
+who does the cat hits # a rabbit $ 
+who does the dirty rabbit bites # a dirty cat $ 
+who does the poor dog loves # a rabbit $ 
+who does the rabbit loves # a cat $ 
+who does a dog hits # a young rabbit $ 
+who does a old dog hates # the cat $ 
+who does a dog loves # the old dog $ 
+who does a old frog loves # the rabbit $ 
+who does a young dog loves # the young dog $ 
+who does the dirty dog knows # the dirty rabbit $ 
+who does a cat bites # the old rabbit $ 
+who does a dog hates # the frog $ 
+who does the rabbit hates # a rabbit $ 
+who does the frog hates # the dirty frog $ 
+who does a cat admires # a dog $ 
+who does the rabbit hates # the dog $ 
+who does a poor frog hates # a poor cat $ 
+who does the clean frog loves # a rabbit $ 
+who does a poor rabbit hits # a young frog $ 
+who does the old frog hates # the dog $ 
+who does the old rabbit hates # a dog $ 
+who does the cat loves # a dirty rabbit $ 
+who does a clean rabbit bites # the frog $ 
+who does a young cat bites # a rich frog $ 
+who does the rabbit admires # the cat $ 
+who does the clean cat admires # a young frog $ 
+who does the dog loves # the rabbit $ 
+who does the cat admires # the frog $ 
+who does a cat hits # the rabbit $ 
+who does the poor cat hits # a frog $ 
+who does the young dog loves # a rabbit $ 
+who does a cat admires # the dog $ 
+who does a dog admires # the poor cat $ 
+who does the frog loves # a cat $ 
+who does the rabbit admires # the cat $ 
+who does a cat hits # the frog $ 
+who does a frog knows # a frog $ 
+who does a cat admires # a rabbit $ 
+who does a cat hits # a poor dog $ 
+who does the dog knows # a frog $ 
+who does the poor frog knows # the rich dog $ 
+who does a dog hates # a rich dog $ 
+who does the rabbit bites # the cat $ 
+who does the dirty dog hits # the old frog $ 
+who does a rabbit knows # a poor frog $ 
+who does the old dog hits # the dog $ 
+who does a dirty cat bites # a clean cat $ 
+who does the frog loves # the poor dog $ 
+who does the rabbit hits # a dog $ 
+who does the dog hits # a old frog $ 
+who does a clean dog bites # a rabbit $ 
+who does the poor rabbit hates # a dog $ 
+who does a frog hits # a rich frog $ 
+who does the dirty dog hates # a dirty cat $ 
+who does a dirty frog hates # the rich dog $ 
+who does the dirty frog bites # a dog $ 
+who does a rabbit hits # the dirty dog $ 
+who does a frog hates # the frog $ 
+who does a frog knows # the rich dog $ 
+who does the rabbit admires # the rich frog $ 
+who does a rabbit knows # a dog $ 
+who does a dirty cat admires # the old rabbit $ 
+who does the rich frog knows # the cat $ 
+who does the dog loves # a clean cat $ 
+who does a frog hits # a cat $ 
+who does the rich dog admires # a poor frog $ 
+who does a poor frog bites # the rabbit $ 
+who does a rabbit loves # a frog $ 
+who does a frog loves # the dirty dog $ 
+who does the young cat hits # a young dog $ 
+who does the rabbit loves # the clean rabbit $ 
+who does the clean rabbit knows # the cat $ 
+who does the dog bites # the old frog $ 
+who does the rabbit hates # the frog $ 
+who does the old rabbit hates # the clean rabbit $ 
+who does the cat hits # the rich cat $ 
+who does the dog hates # a cat $ 
+who does the poor frog hates # the dirty frog $ 
+who does a cat knows # the rich rabbit $ 
+who does the rich rabbit loves # the clean cat $ 
+who does the dog knows # a frog $ 
+who does a rich rabbit admires # a cat $ 
+who does the rabbit bites # the frog $ 
+who does the dog knows # the old rabbit $ 
+who does the clean frog admires # the rabbit $ 
+who does a clean rabbit loves # the frog $ 
+who does the cat loves # a frog $ 
+who does the rabbit bites # a rich frog $ 
+who does a cat hates # a dog $ 
+who does a rabbit admires # a rich dog $ 
+who does a dirty frog knows # a young dog $ 
+who does the dirty cat knows # the dog $ 
+who does a poor cat admires # the clean dog $ 
+who does a rabbit knows # the frog $ 
+who does a clean rabbit hits # a rabbit $ 
+who does the clean frog admires # the old rabbit $ 
+who does a poor frog admires # a cat $ 
+who does the poor cat loves # the rabbit $ 
+who does a frog hits # the poor dog $ 
+who does the rabbit admires # the dirty cat $ 
+who does the frog admires # the dog $ 
+who does a cat hits # the poor frog $ 
+who does the clean rabbit admires # a old cat $ 
+who does a frog hates # the rabbit $ 
+who does a rabbit bites # the young dog $ 
+who does a dirty dog hits # the frog $ 
+who does a young cat bites # a rabbit $ 
+who does a old rabbit loves # the frog $ 
+who does the rabbit hates # the young dog $ 
+who does a young frog hates # a rabbit $ 
+who does the dog bites # a dog $ 
+who does a cat bites # a rabbit $ 
+who does the rich rabbit hates # a clean rabbit $ 
+who does a cat hates # a cat $ 
+who does a dog hates # a rabbit $ 
+who does the cat loves # the dirty dog $ 
+who does the dirty rabbit hits # a dirty frog $ 
+who does a dog bites # the dog $ 
+who does a frog knows # a rich frog $ 
+who does the clean cat hits # the dirty rabbit $ 
+who does the dog hits # the young rabbit $ 
+who does the dirty rabbit bites # a frog $ 
+who does a cat hates # the cat $ 
+who does a poor rabbit admires # the old frog $ 
+who does a rich rabbit bites # a old frog $ 
+who does the cat knows # the clean rabbit $ 
+who does a dog hates # the rich cat $ 
+who does a dog hits # the young rabbit $ 
+who does the rabbit bites # a cat $ 
+who does the young dog loves # a old rabbit $ 
+who does a dog admires # the rabbit $ 
+who does a dirty cat hits # a rich dog $ 
+who does a rabbit knows # the poor cat $ 
+who does a clean cat loves # a young rabbit $ 
+who does the cat bites # a cat $ 
+who does the young frog hates # a rich dog $ 
+who does a cat loves # the clean cat $ 
+who does a rabbit hates # a frog $ 
+who does a rich cat loves # a rich cat $ 
+who does the rabbit hits # the dirty rabbit $ 
+who does the poor rabbit admires # a dog $ 
+who does the cat knows # a cat $ 
+who does the rabbit loves # a dog $ 
+who does the rich rabbit hates # the frog $ 
+who does the rabbit knows # a young frog $ 
+who does a rich cat hits # the frog $ 
+who does a frog loves # the poor dog $ 
+who does a old cat knows # a clean dog $ 
+who does the dog admires # the rich frog $ 
+who does the rabbit admires # the dirty cat $ 
+who does a rabbit hits # the old cat $ 
+who does the dog hits # a rabbit $ 
+who does the dog hits # a poor frog $ 
+who does a frog admires # a dog $ 
+who does the young rabbit hates # a cat $ 
+who does a rabbit bites # a frog $ 
+who does a rich frog bites # the old dog $ 
+who does the clean dog knows # the poor frog $ 
+who does the frog loves # a poor rabbit $ 
+who does a cat bites # a dog $ 
+who does a dog hits # a cat $ 
+who does a rich cat loves # the frog $ 
+who does a rabbit hates # a cat $ 
+who does the frog bites # the frog $ 
+who does the poor cat hits # the poor cat $ 
+who does a young rabbit knows # the rabbit $ 
+who does the frog hits # a dog $ 
+who does a rabbit admires # a dog $ 
+who does a rich dog hates # the frog $ 
+who does a cat knows # a clean cat $ 
+who does the dog knows # the dog $ 
+who does the young cat bites # the frog $ 
+who does the frog admires # a frog $ 
+who does a rabbit knows # a cat $ 
+who does the clean dog hates # a old frog $ 
+who does a clean frog bites # a dirty frog $ 
+who does the rich rabbit loves # a young frog $ 
+who does the old cat loves # the dirty cat $ 
+who does a frog loves # a rabbit $ 
+who does the dog hates # a rabbit $ 
+who does a dirty rabbit loves # a young cat $ 
+who does the clean dog bites # the frog $ 
+who does a dog bites # a rich dog $ 
+who does a dog admires # a rabbit $ 
+who does the clean dog knows # the dog $ 
+who does a cat loves # a dirty cat $ 
+who does a dog loves # the dog $ 
+who does the clean dog bites # a frog $ 
+who does a clean rabbit bites # a rabbit $ 
+who does the frog knows # a old dog $ 
+who does the poor dog admires # a rabbit $ 
+who does the old cat admires # the dog $ 
+who does the young frog loves # a poor rabbit $ 
+who does a young dog knows # the poor frog $ 
+who does a rabbit hates # the old rabbit $ 
+who does the old cat admires # the rich frog $ 
+who does a frog hates # a frog $ 
+who does a dog knows # the clean frog $ 
+who does a clean cat knows # the rabbit $ 
+who does the rabbit bites # a dirty dog $ 
+who does a rabbit loves # the rabbit $ 
+who does a old rabbit loves # a old cat $ 
+who does a clean rabbit loves # the poor dog $ 
+who does the young dog hates # a young cat $ 
+who does the dog loves # the frog $ 
+who does the rich rabbit bites # a poor rabbit $ 
+who does the rabbit loves # the cat $ 
+who does the poor frog bites # the cat $ 
+who does the rabbit hates # a dog $ 
+who does the old frog hits # a rabbit $ 
+who does the rich dog hates # the frog $ 
+who does a clean frog loves # a dog $ 
+who does a young frog admires # the dog $ 
+who does the rich rabbit admires # a old cat $ 
+who does a poor cat knows # a rich frog $ 
+who does a rabbit hates # a old rabbit $ 
+who does the old cat knows # the poor cat $ 
+who does the dog hates # the rabbit $ 
+who does the rich cat hits # a rich frog $ 
+who does a young dog knows # the rich cat $ 
+who does a dog loves # the young cat $ 
+who does the rabbit knows # a dirty rabbit $ 
+who does a old dog loves # a dirty rabbit $ 
+who does the dirty dog knows # the frog $ 
+who does the young rabbit hates # the frog $ 
+who does a old cat bites # a dog $ 
+who does the rabbit hits # the dirty dog $ 
+who does a young frog hits # a poor cat $ 
+who does a cat hates # a old rabbit $ 
+who does a rabbit admires # the dirty cat $ 
+who does a dirty frog loves # the cat $ 
+who does a rich dog hits # a dirty rabbit $ 
+who does a clean dog knows # a clean frog $ 
+who does a young dog hits # the rabbit $ 
+who does a clean dog hits # a dirty dog $ 
+who does the dog hates # a dog $ 
+who does the rabbit hits # the dog $ 
+who does a clean cat hits # a clean frog $ 
+who does the old dog hits # the rabbit $ 
+who does a young dog admires # a frog $ 
+who does the rich frog bites # the dog $ 
+who does a clean dog loves # a dog $ 
+who does the poor cat knows # a young rabbit $ 
+who does a young frog hits # the rabbit $ 
+who does the rabbit loves # the dirty rabbit $ 
+who does the clean cat admires # a rabbit $ 
+who does a old rabbit hates # the young rabbit $ 
+who does a rabbit admires # a dirty rabbit $ 
+who does the poor rabbit loves # a cat $ 
+who does a old cat knows # the old frog $ 
+who does the dog hits # the rich dog $ 
+who does the rich frog loves # the poor rabbit $ 
+who does a rabbit hates # the dirty dog $ 
+who does a rich dog loves # a young dog $ 
+who does the rabbit hits # a rabbit $ 
+who does a old cat hates # a cat $ 
+who does a young cat bites # a clean dog $ 
+who does the clean rabbit bites # a dog $ 
+who does a young cat admires # a frog $ 
+who does a frog bites # a dog $ 
+who does a frog hits # a clean cat $ 
+who does a clean frog hits # the old frog $ 
+who does a old rabbit bites # the frog $ 
+who does the dog loves # the frog $ 
+who does the frog hates # a poor dog $ 
+who does the cat hates # a cat $ 
+who does a rabbit knows # a dog $ 
+who does the clean dog bites # the old rabbit $ 
+who does a frog knows # the rich cat $ 
+who does the rich dog hates # the frog $ 
+who does the cat knows # a dog $ 
+who does a frog knows # a rich frog $ 
+who does the young cat hates # a frog $ 
+who does the clean dog knows # the frog $ 
+who does the rabbit knows # a frog $ 
+who does the frog knows # a frog $ 
+who does the rabbit hates # the dog $ 
+who does a clean rabbit loves # a clean cat $ 
+who does the dog bites # a poor rabbit $ 
+who does the rich dog loves # a frog $ 
+who does a clean frog hates # a frog $ 
+who does a dirty dog admires # a young rabbit $ 
+who does the cat hits # a frog $ 
+who does a rabbit hits # a old dog $ 
+who does the rich rabbit loves # the young cat $ 
+who does a dog admires # the rabbit $ 
+who does the cat bites # a dog $ 
+who does the frog knows # the dirty cat $ 
+who does a young frog knows # a frog $ 
+who does a young dog loves # a cat $ 
+who does a cat hates # a cat $ 
+who does a rabbit knows # a frog $ 
+who does the old dog hits # a frog $ 
+who does a rabbit hates # a poor rabbit $ 
+who does the young frog admires # a young dog $ 
+who does the cat loves # a old frog $ 
+who does the rabbit hits # the young cat $ 
+who does the old rabbit admires # the rich frog $ 
+who does the cat loves # a poor dog $ 
+who does the cat hates # a dirty frog $ 
+who does the dog hates # the old rabbit $ 
+who does the rabbit admires # the clean cat $ 
+who does the clean cat hits # a clean rabbit $ 
+who does the rich rabbit hits # the clean rabbit $ 
+who does a dog loves # the frog $ 
+who does the rabbit hits # a young rabbit $ 
+who does a poor cat hates # a dog $ 
+who does the rabbit hates # the rich frog $ 
+who does the rich cat hates # a frog $ 
+who does a old dog knows # the poor frog $ 
+who does the frog bites # a rabbit $ 
+who does the dog hates # the poor cat $ 
+who does a dirty rabbit loves # a old rabbit $ 
+who does the cat bites # the dirty frog $ 
+who does the rich frog hits # a frog $ 
+who does the rich rabbit hits # a old frog $ 
+who does a dirty rabbit admires # a clean cat $ 
+who does a frog knows # a rich dog $ 
+who does a cat loves # the poor dog $ 
+who does the dog knows # the dirty frog $ 
+who does the cat hits # a cat $ 
+who does the frog loves # the frog $ 
+who does a rich frog knows # a dirty frog $ 
+who does the frog hates # the rabbit $ 
+who does the old dog admires # the dog $ 
+who does the clean cat loves # a young cat $ 
+who does the poor rabbit hates # a cat $ 
+who does the old rabbit loves # the dog $ 
+who does a poor frog hates # a poor cat $ 
+who does the old rabbit hates # the cat $ 
+who does a frog bites # the cat $ 
+who does a dog knows # a dog $ 
+who does a rich frog hates # the rabbit $ 
+who does the rich frog admires # the cat $ 
+who does the frog admires # a rich frog $ 
+who does a cat knows # a dog $ 
+who does the rich rabbit hates # the frog $ 
+who does a dog hits # the dog $ 
+who does the dog hits # the rabbit $ 
+who does a cat knows # a cat $ 
+who does the dirty frog hits # a rabbit $ 
+who does the young dog hits # the poor cat $ 
+who does the rich cat knows # a young rabbit $ 
+who does a rich frog knows # a frog $ 
+who does the frog bites # the poor cat $ 
+who does a dirty cat knows # a old cat $ 
+who does the frog loves # a rabbit $ 
+who does the dog loves # the old dog $ 
+who does a young frog hits # the clean rabbit $ 
+who does a dirty dog admires # a rich cat $ 
+who does the dog bites # the cat $ 
+who does the dog loves # a poor cat $ 
+who does the dirty dog hates # a cat $ 
+who does the frog bites # the old rabbit $ 
+who does the rabbit hits # a young dog $ 
+who does a dog bites # a young dog $ 
+who does a cat hits # the rich frog $ 
+who does the poor frog hates # a cat $ 
+who does a rabbit bites # a cat $ 
+who does a dog knows # the cat $ 
+who does the dog hits # a dog $ 
+who does the rabbit knows # a poor rabbit $ 
+who does a cat hates # the frog $ 
+who does a dirty frog knows # a rich rabbit $ 
+who does a young frog hates # the cat $ 
+who does a young rabbit hates # the dog $ 
+who does a clean frog loves # the old frog $ 
+who does the rabbit bites # a old dog $ 
+who does a frog loves # the cat $ 
+who does a dirty cat admires # the frog $ 
+who does the frog knows # a dirty dog $ 
+who does the old dog hates # the frog $ 
+who does the rabbit hits # a cat $ 
+who does a clean rabbit admires # a young dog $ 
+who does a rich cat admires # the frog $ 
+who does the dirty frog bites # the old cat $ 
+who does the rich frog admires # a young cat $ 
+who does a poor rabbit bites # the rabbit $ 
+who does a dirty frog hits # a cat $ 
+who does the young dog loves # a old frog $ 
+who does a frog hits # the poor cat $ 
+who does the clean dog loves # a dirty rabbit $ 
+who does the frog hits # the frog $ 
+who does the frog bites # a rich frog $ 
+who does a young cat hates # a dirty cat $ 
+who does the dog admires # the dog $ 
+who does a frog admires # a dirty rabbit $ 
+who does a cat loves # the poor cat $ 
+who does the cat bites # the clean rabbit $ 
+who does a young cat hits # a young dog $ 
+who does a rich rabbit loves # a rich cat $ 
+who does a dog hits # the young dog $ 
+who does the young frog knows # a frog $ 
+who does a old cat hits # the dog $ 
+who does the poor frog bites # the frog $ 
+who does a old frog bites # a dog $ 
+who does a rich rabbit hates # a rich rabbit $ 
+who does a poor frog hates # the young cat $ 
+who does a rabbit hits # a rich rabbit $ 
+who does the poor frog knows # a cat $ 
+who does the dog bites # a rich frog $ 
+who does the poor cat admires # a frog $ 
+who does a rich cat bites # a poor rabbit $ 
+who does the frog admires # the dog $ 
+who does the rabbit loves # a dog $ 
+who does a frog hits # the poor frog $ 
+who does a cat admires # a rabbit $ 
+who does a young frog hates # the rich cat $ 
+who does the old dog hits # the poor dog $ 
+who does a dog bites # a rich dog $ 
+who does a poor frog knows # the young frog $ 
+who does a dog bites # the clean cat $ 
+who does a old dog hits # the young rabbit $ 
+who does the clean dog hates # the rich rabbit $ 
+who does a frog hates # the dog $ 
+who does the rich rabbit hits # the rich cat $ 
+who does a frog loves # the frog $ 
+who does the poor rabbit hits # a cat $ 
+who does a rich dog knows # the rabbit $ 
+who does the rich frog bites # the dirty frog $ 
+who does the young frog hits # the rabbit $ 
+who does the young rabbit hates # a poor dog $ 
+who does a old frog loves # a cat $ 
+who does a poor rabbit hates # a rabbit $ 
+who does a rabbit knows # a dog $ 
+who does a dog hits # a dirty cat $ 
+who does a frog hits # a poor frog $ 
+who does a frog knows # a poor rabbit $ 
+who does the poor rabbit admires # a dog $ 
+who does a dog hits # the frog $ 
+who does a rabbit admires # a old cat $ 
+who does a rich frog knows # a cat $ 
+who does a rich frog bites # a rich rabbit $ 
+who does the dog hits # the dog $ 
+who does a frog hates # the young rabbit $ 
+who does a poor frog loves # the dog $ 
+who does a young dog loves # a poor cat $ 
+who does the cat admires # the dog $ 
+who does the dog loves # the dog $ 
+who does the dirty rabbit hits # a poor dog $ 
+who does a young cat bites # the clean dog $ 
+who does a old frog hates # a frog $ 
+who does a rabbit loves # a rabbit $ 
+who does a dog loves # a rich dog $ 
+who does a young dog loves # the rabbit $ 
+who does the old cat hates # the rich cat $ 
+who does the frog bites # a clean rabbit $ 
+who does the dog bites # the rabbit $ 
+who does a dog admires # a old rabbit $ 
+who does the cat hates # the dog $ 
+who does a frog hates # the cat $ 
+who does a cat admires # a rabbit $ 
+who does a rabbit hits # the rich frog $ 
+who does the young rabbit knows # a young frog $ 
+who does the rabbit hates # a old rabbit $ 
+who does the rabbit loves # the poor dog $ 
+who does a rabbit hates # a poor dog $ 
+who does a rich rabbit loves # the frog $ 
+who does a dog admires # a dirty rabbit $ 
+who does the rabbit bites # a rabbit $ 
+who does the frog knows # a rich frog $ 
+who does the rabbit hates # a dog $ 
+who does the frog hits # the clean dog $ 
+who does a cat loves # the frog $ 
+who does a cat bites # the young dog $ 
+who does a old cat bites # the old cat $ 
+who does a old dog bites # the clean rabbit $ 
+who does the dirty frog loves # a frog $ 
+who does the young frog loves # the dirty dog $ 
+who does the rabbit knows # the rabbit $ 
+who does a cat knows # a poor rabbit $ 
+who does a rabbit bites # the rabbit $ 
+who does a dirty cat hates # the dog $ 
+who does the clean cat loves # a poor rabbit $ 
+who does the clean frog knows # the frog $ 
+who does the poor dog bites # the old cat $ 
+who does the rich rabbit bites # the rich frog $ 
+who does the rabbit bites # a rich frog $ 
+who does a dirty cat admires # a dog $ 
+who does the rabbit bites # a dog $ 
+who does a dirty dog bites # a young frog $ 
+who does a dirty rabbit bites # a frog $ 
+who does the old dog loves # the cat $ 
+who does the poor rabbit bites # a frog $ 
+who does the young rabbit loves # the old frog $ 
+who does a rich cat bites # the cat $ 
+who does the cat hits # a rabbit $ 
+who does a poor frog hits # the rabbit $ 
+who does a dog hits # a young dog $ 
+who does a dog bites # the poor rabbit $ 
+who does a rich frog hits # the cat $ 
+who does a cat knows # the rabbit $ 
+who does the young frog knows # the poor frog $ 
+who does the rich dog loves # a rich dog $ 
+who does the rabbit knows # a rabbit $ 
+who does a dog loves # a dog $ 
+who does the young frog admires # a dirty cat $ 
+who does a dog loves # a clean rabbit $ 
+who does a dog bites # a old rabbit $ 
+who does the old frog bites # a frog $ 
+who does a poor frog admires # the cat $ 
+who does the rabbit hates # a frog $ 
+who does a frog hates # the rabbit $ 
+who does the frog admires # a frog $ 
+who does a dog hits # the cat $ 
+who does the cat admires # the dog $ 
+who does the dog hates # the old frog $ 
+who does a dog hates # the old cat $ 
+who does a dog admires # the dirty cat $ 
+who does a rabbit admires # the cat $ 
+who does a rabbit admires # a old dog $ 
+who does a old frog hates # a dog $ 
+who does a rich cat hits # a frog $ 
+who does a dirty rabbit knows # a clean rabbit $ 
+who does the rabbit hates # the poor cat $ 
+who does a poor rabbit admires # the poor rabbit $ 
+who does a rabbit bites # a dirty rabbit $ 
+who does the old frog knows # a clean rabbit $ 
+who does the young rabbit knows # a rabbit $ 
+who does the cat bites # the dog $ 
+who does the rabbit knows # a young cat $ 
+who does the cat knows # a rabbit $ 
+who does the cat hates # the frog $ 
+who does a young cat hits # the rabbit $ 
+who does the dirty frog knows # the dirty frog $ 
+who does a dirty rabbit hits # the old rabbit $ 
+who does the poor rabbit hits # a poor frog $ 
+who does the rabbit hates # the old frog $ 
+who does a young dog hits # the dog $ 
+who does a poor cat knows # the dirty cat $ 
+who does the rich dog hits # the cat $ 
+who does a young rabbit hates # a rabbit $ 
+who does a young cat hits # the rich rabbit $ 
+who does the dog knows # a rabbit $ 
+who does the young frog knows # the frog $ 
+who does a poor frog bites # the dirty frog $ 
+who does the dirty cat hits # a frog $ 
+who does a young frog admires # a young frog $ 
+who does a dirty cat admires # the rabbit $ 
+who does the young dog hits # the poor dog $ 
+who does a young dog hits # the rich rabbit $ 
+who does a young dog loves # the dog $ 
+who does a frog hates # a rabbit $ 
+who does a poor frog hates # the cat $ 
+who does the poor dog loves # a rich frog $ 
+who does the rabbit knows # a dirty rabbit $ 
+who does the cat hates # the frog $ 
+who does a frog loves # a rich rabbit $ 
+who does a old frog admires # a young rabbit $ 
+who does the young dog loves # the rabbit $ 
+who does the rabbit admires # a dog $ 
+who does the clean rabbit admires # a old frog $ 
+who does a dog knows # the poor rabbit $ 
+who does a frog knows # the cat $ 
+who does a old frog knows # the rich cat $ 
+who does a young cat hits # the dog $ 
+who does the cat knows # the frog $ 
+who does a dog knows # the clean dog $ 
+who does the poor frog bites # the rich frog $ 
+who does a rabbit hits # the dirty frog $ 
+who does a cat hates # the poor rabbit $ 
+who does the frog admires # a young frog $ 
+who does a frog hates # the frog $ 
+who does the old dog loves # a dirty rabbit $ 
+who does the frog hates # the young rabbit $ 
+who does the old cat bites # a poor dog $ 
+who does a clean rabbit knows # the poor frog $ 
+who does a dog loves # a frog $ 
+who does a rabbit bites # the clean rabbit $ 
+who does a dog loves # a poor frog $ 
+who does a young cat bites # a frog $ 
+who does the rabbit hates # a rabbit $ 
+who does the rich dog hits # the dirty cat $ 
+who does a old rabbit loves # a rich rabbit $ 
+who does a poor cat hates # a rich dog $ 
+who does the old frog admires # the cat $ 
+who does the rich rabbit admires # the poor dog $ 
+who does the dog loves # the young dog $ 
+who does a rabbit knows # a rich frog $ 
+who does the old cat admires # the frog $ 
+who does a dirty dog hits # a rabbit $ 
+who does a clean dog admires # the cat $ 
+who does the poor frog loves # a old frog $ 
+who does the rabbit hits # a frog $ 
+who does the dog bites # the rabbit $ 
+who does the rich rabbit hits # a clean rabbit $ 
+who does a frog knows # the dirty rabbit $ 
+who does the cat knows # the old rabbit $ 
+who does a frog loves # a frog $ 
+who does a frog bites # the rich cat $ 
+who does a old cat admires # a clean cat $ 
+who does a dog loves # the young rabbit $ 
+who does a rabbit loves # the rich dog $ 
+who does the dog bites # a rabbit $ 
+who does the clean dog hates # a cat $ 
+who does a dog knows # the dog $ 
+who does a dirty frog hits # a frog $ 
+who does the dog admires # the rich cat $ 
+who does the dog bites # the rich rabbit $ 
+who does the young rabbit hits # a old dog $ 
+who does the clean dog hates # the dog $ 
+who does a cat admires # a poor frog $ 
+who does the dog hits # a clean frog $ 
+who does the rabbit bites # the cat $ 
+who does a rabbit loves # the rich rabbit $ 
+who does the rich cat loves # a cat $ 
+who does a rabbit bites # the cat $ 
+who does the frog knows # the clean cat $ 
+who does the cat knows # the dirty rabbit $ 
+who does a poor rabbit bites # the frog $ 
