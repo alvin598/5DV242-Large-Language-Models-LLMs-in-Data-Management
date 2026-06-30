@@ -1,13 +1,23 @@
+import random
+from pathlib import Path
+
 import torch
 from torch.utils.data import Dataset
 from bpe import get_workspace, get_stats, apply_merge
-import random
+
+
+def resolve_path(path):
+    path_obj = Path(path)
+    if not path_obj.is_absolute():
+        path_obj = Path(__file__).resolve().parent / path_obj
+    return path_obj
 
 class Corpus(Dataset):
 
     def __init__(self, c_window_size, corpus_file, vocab_size=None,sft=False):
         super().__init__()
-        data = open(corpus_file, 'r').read().replace('\n',' ')
+        corpus_path = resolve_path(corpus_file)
+        data = open(corpus_path, 'r', encoding='utf-8').read().replace('\n',' ')
 
         self.c_window_size = c_window_size
         chars = sorted(list(set(data + "#$")))

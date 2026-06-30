@@ -1,6 +1,15 @@
 import random
+from pathlib import Path
+
 import torch
 from torch.utils.data.dataloader import DataLoader
+
+
+def resolve_path(path):
+    path_obj = Path(path)
+    if not path_obj.is_absolute():
+        path_obj = Path(__file__).resolve().parent / path_obj
+    return path_obj
 
 GRAD_NORM_CLIP = 1.0
 
@@ -24,7 +33,8 @@ class Trainer:
         self.model = self.model.to(self.device)
         self.batch_size = batch_size
         print("running on device", self.device)
-        self.prompts = open(prompt_file, 'r').read().split("\n")
+        prompt_path = resolve_path(prompt_file)
+        self.prompts = open(prompt_path, 'r', encoding='utf-8').read().split("\n")
         self.iter_num = 0
 
     def run(self):
@@ -75,7 +85,7 @@ class Trainer:
                     print('---------------------')
 
                 print("saving model")
-                torch.save(model.state_dict(), "model.pt" )
+                torch.save(model.state_dict(), Path(__file__).resolve().parent / "model.pt")
 
                 model.train()
 

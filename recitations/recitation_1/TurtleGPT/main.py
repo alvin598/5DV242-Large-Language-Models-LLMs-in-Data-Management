@@ -1,9 +1,20 @@
+from pathlib import Path
+
 from corpus import Corpus
 from model import TurtleGPT
 from trainer import Trainer
 import torch
 
-usage = ['inference','pretraining','SFT'][1]
+BASE_DIR = Path(__file__).resolve().parent
+
+
+def resolve_path(path):
+    path_obj = Path(path)
+    if not path_obj.is_absolute():
+        path_obj = BASE_DIR / path_obj
+    return path_obj
+
+usage = ['inference','pretraining','SFT'][0]
 print(f"USAGE:{usage}")
 
 set_ups = {
@@ -14,11 +25,11 @@ set_ups = {
     'nano-turtle': {'c_window_size':32,'n_layer':1, 'n_head':1, 'd_model':4, 'batch_size':64}
 }
 
-turtle_type = 'giga-turtle'
+turtle_type = 'nano-turtle'
 LEARNING_RATE = 0.0005
 
 vocab_size = 100
-corpus_file = "corpora/stories.txt"
+corpus_file = resolve_path("corpora/stories.txt")
 
 train_dataset = Corpus(set_ups[turtle_type]['c_window_size'], corpus_file, vocab_size=vocab_size)
 
@@ -48,7 +59,7 @@ if __name__ == '__main__':
                 print('---------------------')
 
     elif usage == 'pretraining':
-        prompt_file = corpus_file.split(".txt")[0] + "-prompts.txt"
+        prompt_file = corpus_file.with_name(corpus_file.stem + "-prompts.txt")
         trainer = Trainer(model,
                           train_dataset,
                           learning_rate=LEARNING_RATE,
@@ -57,8 +68,8 @@ if __name__ == '__main__':
         trainer.run()
 
     elif usage == 'SFT':
-        corpus_file = "corpora/stories-sft.txt"
-        prompt_file = corpus_file.split(".txt")[0] + "-prompts.txt"
+        corpus_file = resolve_path("corpora/stories-sft.txt")
+        prompt_file = corpus_file.with_name(corpus_file.stem + "-prompts.txt")
         cram_down = Corpus(set_ups[turtle_type]['c_window_size'],
                            corpus_file,
                            sft=True)

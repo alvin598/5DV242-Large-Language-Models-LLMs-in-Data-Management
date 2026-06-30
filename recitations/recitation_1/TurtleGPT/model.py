@@ -3,10 +3,12 @@
 # influence from Umar Jamil's implementation of Attention is All you Need.
 
 import math
+import os
+from pathlib import Path
+
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
-import os
 
 ATTN_PDROP = 0.1
 RESID_PDROP = 0.1
@@ -47,12 +49,13 @@ class TurtleGPT(nn.Module):
             if pn.endswith('c_proj.weight'): # apply a special scaled init to the residual projections, per GPT-2 paper
                 torch.nn.init.normal_(p, mean=0.0, std=0.02/math.sqrt(2 * n_layer))
 
+        model_path = Path(__file__).resolve().parent / "model.pt"
         print("number of parameters: %.2fM" % (n_params/1e6,))
-        if os.path.exists("model.pt"):
+        if os.path.exists(model_path):
             print("loading parameters from model.pt file")
             try:
-                self.load_state_dict(torch.load("model.pt", map_location=self.device))
-            except:
+                self.load_state_dict(torch.load(model_path, map_location=self.device))
+            except Exception:
                 print("Error: Incompatible model.pt file")
         else:
             print('Starting from scratch')
