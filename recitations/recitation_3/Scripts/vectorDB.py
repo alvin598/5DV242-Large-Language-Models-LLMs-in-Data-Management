@@ -1,9 +1,6 @@
 from langchain_community.vectorstores import SKLearnVectorStore
 from langchain_nomic.embeddings import NomicEmbeddings
 
-#from dealership import sales_questions, training_set, test_set
-# from hotel_reviews import good_reviews, training_set, test_set
-
 class VectorDBClassifier:
     def __init__(self, training_set, test_set, good_reviews):
         self.training_set = training_set

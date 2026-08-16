@@ -2,11 +2,6 @@ from langchain_ollama import OllamaLLM
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-
-# from dealership import sales_questions, training_set, test_set
-# from hotel_reviews import good_reviews, training_set, test_set
-
-
 class FewShotClassifier:
     def __init__(self, training_set, test_set, good_reviews):
         self.training_set = training_set
