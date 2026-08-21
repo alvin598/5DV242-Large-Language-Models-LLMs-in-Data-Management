@@ -2,7 +2,10 @@ from langchain_community.vectorstores import SKLearnVectorStore
 from langchain_nomic.embeddings import NomicEmbeddings
 
 class VectorDBClassifier:
-    def __init__(self, training_set, test_set, good_reviews):
+    def __init__(self, training_set, test_set, good_reviews, k=6):
+        if k < 1:
+            raise ValueError("k must be at least 1")
+
         self.training_set = training_set
         self.test_set = test_set
         self.good_reviews = good_reviews
@@ -14,10 +17,10 @@ class VectorDBClassifier:
             texts=training_set,
             embedding=embedding_model
         )
-        self.retriever = vectorstore.as_retriever(k=6)
+        self.retriever = vectorstore.as_retriever(search_kwargs={"k": k})
     def classify(self):
         correct = 0
-        for test in self.test_set:
+        for i, test in enumerate(self.test_set):
             if test in self.good_reviews:
                 sales = True
             else:
@@ -34,6 +37,6 @@ class VectorDBClassifier:
             print(f"{test}:{score/n}")
             if score/n > 0.5:
                 correct +=1
+        return correct, len(self.test_set)
 
-        print(correct)
 

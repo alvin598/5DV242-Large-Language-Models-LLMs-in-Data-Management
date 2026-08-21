@@ -107,7 +107,7 @@ bad_reviews = [
 ]
 questions = list(dict.fromkeys(good_reviews + bad_reviews))
 
-random.seed(42)
+# random.seed(42)
 random.shuffle(questions)
 
 training_set = questions[:80]
