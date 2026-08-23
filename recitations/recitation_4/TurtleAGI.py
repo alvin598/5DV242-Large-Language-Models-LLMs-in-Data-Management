@@ -23,7 +23,12 @@ def turtleAGI(objective):
 
         print(f"NEXT TASK: {task['task_name']}, DEPTH: {task['task_depth']}\n")
 
-        raw_solution = generate_raw_solution(objective, task["task_name"])
+        user_injection = input("Add additional context or press enter to continue: ")
+
+        if user_injection:
+            print(f"User injection: {user_injection}\n")
+
+        raw_solution = generate_raw_solution(objective, task["task_name"], user_injection)
         task_names = list(map(lambda x:x['task_name'],agenda))
 
         if task["task_depth"] < 2:
@@ -31,7 +36,8 @@ def turtleAGI(objective):
                 objective,
                 raw_solution,
                 task["task_name"],
-                task_names
+                task_names,
+                user_injection
             )
         else:
             new_tasks = []
@@ -42,21 +48,32 @@ def turtleAGI(objective):
             new_task['task_depth'] = task["task_depth"] + 1
             agenda.append(new_task)
 
-        prioritized_tasks = prioritize_solution(objective, agenda)
+        prioritized_tasks = prioritize_solution(objective, agenda, user_injection)
 
-        if prioritized_tasks:
+        if prioritized_tasks is not None:
             agenda = prioritized_tasks
 
-def generate_raw_solution(objective, task):
+def generate_raw_solution(objective, task, user_injection):
     prompt = f'Perform the following task based on the following objective: {objective}.\n'
-    prompt += f'\n task: {task}\nResponse:'
+    prompt += f'\n task: {task}'
+
+    if user_injection:
+        prompt += f'\n\nAdditional context: {user_injection}:'
+
+    prompt += '\nResponse:'
+
     return llm_call(prompt, max_len=2000)
 
-def normalize_solution(objective, result, task_description, task_list):
+def normalize_solution(
+    objective, result, task_description, task_list, user_injection
+):
     prompt = f"""
 You are to use the raw task results to create new tasks with the following objective: {objective}.
 The last completed task has the raw result: \n{result}
 This result was based on this task description: {task_description}.\n"""
+
+    if user_injection:
+        prompt += f"Additional user instructions: {user_injection}\n"
 
     if task_list:
         prompt += f"These are incomplete tasks: {', '.join(task_list)}\n"
@@ -87,7 +104,7 @@ Unless your list is empty, do not include any headers before your numbered list 
     rv = [{"task_name": task_name} for task_name in new_tasks_list]
     return rv
 
-def prioritize_solution(objective, agenda):
+def prioritize_solution(objective, agenda, user_injection):
 
     task_names = [task["task_name"] for task in agenda]
 
@@ -104,6 +121,9 @@ Do not remove any tasks. Return the ranked tasks as a numbered list in the forma
 
 The entries must be consecutively numbered, starting with 1. The number of each entry must be followed by a period.
 Do not include any headers before your ranked list or follow your list with any other output."""
+
+    if user_injection:
+        prompt += f"\nAdditional user instructions: {user_injection}\n"
 
 
     response = llm_call(prompt, max_len=2000)
