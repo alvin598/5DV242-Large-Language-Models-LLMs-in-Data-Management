@@ -9,6 +9,7 @@ def turtleAGI(objective):
     t_id = 1
     initial_task = {
         "task_id": t_id,
+        "task_depth": 0,
         "task_name": "Develop a task list"
     }
 
@@ -20,26 +21,28 @@ def turtleAGI(objective):
 
         task = agenda.pop(0)
 
-        print(f"NEXT TASK: {task['task_name']}\n")
+        print(f"NEXT TASK: {task['task_name']}, DEPTH: {task['task_depth']}\n")
 
         raw_solution = generate_raw_solution(objective, task["task_name"])
         task_names = list(map(lambda x:x['task_name'],agenda))
 
-        new_tasks = normalize_solution(
-            objective,
-            raw_solution,
-            task["task_name"],
-            task_names
-        )
+        if task["task_depth"] < 2:
+            new_tasks = normalize_solution(
+                objective,
+                raw_solution,
+                task["task_name"],
+                task_names
+            )
+        else:
+            new_tasks = []
 
         for new_task in new_tasks:
             t_id +=1
             new_task['task_id'] = t_id
+            new_task['task_depth'] = task["task_depth"] + 1
             agenda.append(new_task)
 
-        task_names = list(map(lambda x: x['task_name'], agenda))
-
-        prioritized_tasks = prioritize_solution(objective, task_names)
+        prioritized_tasks = prioritize_solution(objective, agenda)
 
         if prioritized_tasks:
             agenda = prioritized_tasks
@@ -84,7 +87,9 @@ Unless your list is empty, do not include any headers before your numbered list 
     rv = [{"task_name": task_name} for task_name in new_tasks_list]
     return rv
 
-def prioritize_solution(objective,task_names):
+def prioritize_solution(objective, agenda):
+
+    task_names = [task["task_name"] for task in agenda]
 
     task_material = '\n' + '\n'.join(task_names)
 
@@ -105,17 +110,20 @@ Do not include any headers before your ranked list or follow your list with any 
     if not response:
         print('Received empty response from priotritization agent. Keeping task list unchanged.')
         return
-    new_tasks = response.split("\n") if "\n" in response else [response]
-    new_tasks_list = []
-    for task_string in new_tasks:
+    ranked_task_names = []
+    for task_string in response.split("\n"):
         task_parts = task_string.strip().split(".", 1)
         if len(task_parts) == 2:
-            task_id = ''.join(s for s in task_parts[0] if s.isnumeric())
             task_name = re.sub(r'[^\w\s_]+', '', task_parts[1]).strip()
             if task_name.strip():
-                new_tasks_list.append({"task_id": task_id, "task_name": task_name})
+                ranked_task_names.append(task_name)
 
-    return new_tasks_list
+    tasks_by_name = {task["task_name"]: task for task in agenda}
+    return [
+        tasks_by_name[task_name]
+        for task_name in ranked_task_names
+        if task_name in tasks_by_name
+    ]
 
 
 llm = ChatOllama(
