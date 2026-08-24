@@ -44,4 +44,4 @@ class FewShotClassifier:
 
             print(f"{self.test_set[i]}:{response}")
 
-        print(correct)
+        return correct, len(self.test_set)

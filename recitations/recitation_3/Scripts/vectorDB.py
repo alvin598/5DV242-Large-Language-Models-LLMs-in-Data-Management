@@ -3,9 +3,6 @@ from langchain_nomic.embeddings import NomicEmbeddings
 
 class VectorDBClassifier:
     def __init__(self, training_set, test_set, good_reviews, k=6):
-        if k < 1:
-            raise ValueError("k must be at least 1")
-
         self.training_set = training_set
         self.test_set = test_set
         self.good_reviews = good_reviews

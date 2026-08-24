@@ -11,7 +11,7 @@ import random
 
 class TextToSQL:
 
-    def __init__(self):
+    def __init__(self, summary_row_threshold=5):
 
         self.base_dir = os.path.join("data", "spider")
         self.domains = os.listdir(self.base_dir)
@@ -76,7 +76,7 @@ class TextToSQL:
         self.summary_chain = summary_prompt | summary_llm
 
         # set the threshold for summarizing results
-        self.summary_row_threshold = 10
+        self.summary_row_threshold = summary_row_threshold
 
         self.inflector = inflect.engine()
 
@@ -259,6 +259,9 @@ class TextToSQL:
                     if len(rows) > self.summary_row_threshold:
                         summary = self.summarize_results(question, rows)
                         print(f"Result summary ({len(rows)} rows): {summary}")
+
+                    else: 
+                        print(f"Calculated answer ({len(rows)} rows): {calculated_answer}")
 
                     if correct_answer == calculated_answer:
                         print("correct!")
