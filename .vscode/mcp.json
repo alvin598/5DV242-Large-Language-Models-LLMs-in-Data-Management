@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "recitation-sql": {
+      "type": "stdio",
+      "command": "py",
+      "args": [
+        "${workspaceFolder}/recitations/recitation_4/mcp_server.py"
+      ],
+      "cwd": "${workspaceFolder}/recitations/recitation_4"
+    }
+  }
+}

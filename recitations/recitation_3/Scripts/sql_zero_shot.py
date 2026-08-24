@@ -11,7 +11,6 @@ import inflect
 class TextToSQL:
 
     def __init__(self):
-        
 
         self.base_dir = os.path.join("data", "spider")
         self.domains = os.listdir(self.base_dir)
@@ -31,11 +30,35 @@ class TextToSQL:
             input_variables=["question","schema","examples"],
         )
 
+        scope_prompt = PromptTemplate(
+            template="""
+            You are checking whether a database can answer a question.
+
+            Database schema:
+            {schema}
+
+            Question:
+            {question}
+
+            Return only JSON:
+            {{
+                "in_scope": true or false,
+                "reason": "short explanation"
+            }}
+
+            Return false if the requested information is not represented
+            by any table or column in the schema. Do not use outside knowledge.
+            """,
+            input_variables=["schema", "question"],
+        )
+
+        
+
         llm = OllamaLLM(
             model="llama3.1",
             temperature=0,
         )
-
+        self.scope_chain = scope_prompt | llm | JsonOutputParser()
         self.chain = prompt | llm | JsonOutputParser()
 
         self.inflector = inflect.engine()
@@ -76,8 +99,8 @@ class TextToSQL:
 
         # no matching tables, return the original schema
         if not linked_tables:
+            print("No linked tables found, returning original schema.")
             return schema
-
         result = Document()
         root = result.createElement("config")
         result.appendChild(root)
@@ -142,6 +165,10 @@ class TextToSQL:
 
                 start = time.time()
                 try:
+                    scope_result = self.in_scope(schema, question)
+                    if not scope_result["in_scope"]:
+                        return {"in_scope": False, "reason": scope_result["reason"]}
+
                     response = self.chain.invoke(
                         {"schema": reduced_schema,
                         "question": question,
@@ -188,3 +215,12 @@ class TextToSQL:
             overall_failed += failed
 
         return domain_results, overall_total, overall_correct, overall_failed
+
+    def in_scope(self, schema, question):
+        scope_result = self.scope_chain.invoke({
+            "schema": schema, 
+            "question": question,
+        })
+        return scope_result
+
+
