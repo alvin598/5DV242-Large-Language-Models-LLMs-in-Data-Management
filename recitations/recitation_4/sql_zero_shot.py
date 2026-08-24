@@ -4,10 +4,8 @@ from langchain_core.output_parsers import JsonOutputParser
 from xml.dom.minidom import parse, parseString, Document
 
 import os
-import time
 import sqlite3
 import inflect
-import sys
 
 class TextToSQL:
 
@@ -35,7 +33,6 @@ class TextToSQL:
             model="llama3.1",
             temperature=0,
         )
-
         
         scope_prompt = PromptTemplate(
             template="""
@@ -112,14 +109,6 @@ class TextToSQL:
         return result.toxml()
 
     def ask(self, database, question):
-
-        # check if the database exists
-        # if database not in self.domains:
-        #     raise ValueError(
-        #         f"Unsupported database '{database}'. "
-        #         f"Supported databases: {', '.join(self.domains)}"
-        #     )
-
         domain_dir = os.path.join(self.base_dir, database)
         database_path = os.path.join(domain_dir, f"{database}.db")
         schema_path = os.path.join(domain_dir, f"{database}.cphrase")
