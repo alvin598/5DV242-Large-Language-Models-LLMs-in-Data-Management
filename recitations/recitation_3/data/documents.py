@@ -1,1 +1,1 @@
-urls = ["https://www.yahoo.com/news/","https://apnews.com/"]
+urls = ["https://www.chelseafc.com/en/history","https://www.thefa.com/about-football-association/who-we-are/history"]
